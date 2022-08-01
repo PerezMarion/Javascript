@@ -81,3 +81,27 @@ const nombresSup20Good = nombres.filter(function (nombre) {
 })
 
 console.log(nombresSup20Good);
+
+// .map() et .filter() retournent toujours un tableau
+// Dans le cas de .filter() si un seul élément rempli la condition émise, cela retournera un tableau d'un seul élément, et si aucun élément
+// ne la rempli, ça retournera un tableau vide
+
+// La fonction .find(element) retourne quand a elle un seul élément (pas un tableau) trouvé après recherche dans tableau
+// Si la recherche satisfait plusieurs éléments du tableau dans lequel on l'effectue, c'est seulement la première occurence qui sera retournée
+
+const noms = [
+    "Jordan Prevot",
+    "Mickael Veril",
+    "Nouah Menadjlia",
+    "Christian Lisangola",
+    "Steven Dumortier",
+    "Valentin Payet",
+    "Mansour Achour",
+    "Christian Lasangala",
+  ];
+  
+  const nom = noms.find(function (nom) {
+    return nom.startsWith("Chris");
+  });
+
+  console.log(nom);    // Ne retourne que "Christian Lisangola" et pas "Christian Lasangala"

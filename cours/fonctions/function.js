@@ -39,7 +39,7 @@ const slugifyV4 = (string, delimiter) => string.toLowerCase().split(" ").join(de
 // Ce type de fonction "rest parametre" permet de représenter un nombre indéfini d'arguments sous forme d'un tableau
 // Si le dernier paramètre nommé fourni à la fonction est préfixé de ..., il devient un tableau dont les éléments entre 
 // 0 (inclus) et la taille du tableau (exclus) sont fournis comme autres arguments à la fonction
-// S'il n'y a qu'un seul argument, la valeur sera un tableau à une cellule, s'il n'y en a pas ce sera un tableau vide quand même
+// S'il n'y a qu'un seul argument, la valeur sera un tableau à une cellule
 
 const somme = (...nombres) => {
     let resultat = 0;
