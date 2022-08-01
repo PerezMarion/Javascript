@@ -19,9 +19,9 @@ if(true) {
 }
 console.log("'a' après 'IF'", a);
 
-// Contrairement au mot clé var, le mot clé let est dit block scoped, c'est à dire que la variable n'est accessible que dans le bloc dans 
+// Contrairement au mot clé "var", le mot clé let est dit block scoped, c'est à dire que la variable n'est accessible que dans le bloc dans 
 // lequel elle est définie. Un bloc c'est ce qui se trouve entre { et }, c'est le cas des boucles, du if mais aussi des fonctions. 
-// Let ne subit pas de hoisting cce qui en fait une variable locale (dans les deux cas suivant cela lève une erreur)
+// Let ne subit pas de hoisting ce qui en fait une variable locale (dans les deux cas suivant cela lève une erreur)
 
 console.log("1. Nom : " + nom2);
 let nom2 = "Marion";
@@ -34,3 +34,9 @@ if(true) {
 console.log("'b' après 'IF'", b);
 
 // Il n'est donc plus recommandé d'utiliser les variables de type "var"
+
+// Il existe ussi le mot clé "const" qui est l'équivalent d'une variable en "final" dans Java. On l'utilise lorsque la valeur de la variable
+// ne changera jamais. On ne pourra donc plus la changer même si on essaye dans la suite du code car cela lèverait une erreur.
+
+const API_BASE_URL = "http://api.contacts.com";
+API_BASE_URL = "changement";
