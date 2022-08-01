@@ -59,3 +59,25 @@ console.log(fruitsPlurielsMap);
 // C'est intéressant car on ajoute toutes les cellules du tableau en une fois et pas cellule par cellule
 // Cependant, le nouveau tableau créé automatiquement aura toujours la même taille que le précédent
 // on utilise donc .map() quand on veut formater notre tableau et obtenir un nouveau tableau de même taille (pas avec if dedans par exemple)
+
+// Mauvaise utilisation de .map()
+
+const nombres =  [2, 5, 67, 8, 56, 19, 33];
+
+const nombresSup20Bad = nombres.map(function (nombre) {
+    if(nombre >= 20) {
+        return nombre;
+    }
+})
+
+console.log(nombresSup20Bad);
+
+// On se retrouve avec des cellules contenant "undefined" car les nombres ne remplissant pas la condition n'ont pas été ajouté, mais
+// le nouveau tableau fait toujours la même taille que le premier
+// Pour éviter cela on utilise la méthode filter qui va adapter la taille finale du tableau en fonction des nombres qui remplissent la condition
+
+const nombresSup20Good = nombres.filter(function (nombre) {
+    return nombre >= 20;
+})
+
+console.log(nombresSup20Good);
