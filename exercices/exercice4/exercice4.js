@@ -28,3 +28,9 @@ while(true) {
         }
     }
 }
+
+// Attention : en Javascript == renvoie true lorsque la valeur de deux variables est la même mais ne s'interesse pas aux types des variables
+// Par exemple si on met 1 == "1" cela renvoie true car on a 1 des deux côtés, pourtant on compare un Integer et un String
+// Si on veut comparer valeur et type en même temps il faut utiliser === (1 === "1" retournera false) idem pour la diférence on utilise !==
+// Ici on compare deux strings donc on peut quand même utiliser == pour comparer la valeur des deux strings
+// C'est différent de Java ou = compare la valeur et == compare la valeur et le type
