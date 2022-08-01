@@ -4,21 +4,22 @@
 
 const nombresGardes = (nombres, entierSeuil) => {
     tableauNombresGardes = [];
-    for(i = nombres.length - entierSeuil; i < nombres.length; i++) {
+    for( let i = nombres.length - entierSeuil; i < nombres.length; i++) {
         tableauNombresGardes.push(nombres[i]);
     }
     return tableauNombresGardes;
 }
 
-tableauDepart = [5, 8, 12, 6, 37];
-entier = 3;
+const tableauDepart = [5, 8, 12, 6, 37, -4, 0];
+const entier = 3;
 
 console.log(nombresGardes(tableauDepart, entier));
 
 // ou
 
 const nombresGardes2 = (nombres, entierSeuil) => {
-    for(i = 0; i < nombres.length - entierSeuil; i++) {
+    const longueurTableau = nombres.length;
+    for(let i = 0; i < longueurTableau - entierSeuil; i++) {
         nombres.shift();
     }
     return nombres;

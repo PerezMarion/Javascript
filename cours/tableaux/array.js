@@ -47,8 +47,8 @@ console.log(noms);       // "Alexandre" apparait au début du tableau fruits et 
 // pas le même résultat. On utilise donc une grandeur O(n) qui est indépendante de l'environnement mais se base sur le nombre d'opérations
 // effectuées.
 // Pour les fonctions .push(element) et .pop() on est sur un runtime de O(1) car cela ne va effectuer qu'une seule opération
-// Pour les fonctions .unshift(element) et .shift() on est sur un runtime de O(n), n étant la longueur du tableau avant suppression/insertion
-// Par exemple si j'ai un tableau de 2 éléments (oui, non) et que j'ajoute un élément en début de liste j'aurais un runtime de 0(2) car :
+// Pour les fonctions .unshift(element) et .shift() on est sur un runtime de O(n), n étant la longueur du tableau
+// Par exemple si j'ai un tableau de 2 éléments (oui, non) et que j'ajoute un élément en début de liste j'aurais un runtime de O(3) car :
 // opér1 : insérer l'élement avec un index de 0, opé2 : passer l'index de "oui" de 0 à 1, opé3 : passer l'index de "non" de 1 à 2
 
 // Application du runtime à une fonction

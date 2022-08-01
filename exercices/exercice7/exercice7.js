@@ -1,4 +1,4 @@
-// 1 - Trouver le nombre des Algeriens dans notre collection
+// 1 - Trouver le nombre d'algeriens dans notre collection
 // 2 - Trouver toutes les personnes dont les prenoms se terminent par a
 // 3 - Avoir la liste de tous les noms
 // 4 - La liste de tous les hommes russes
