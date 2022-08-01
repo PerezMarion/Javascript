@@ -5,8 +5,8 @@
 // L’alerte  affiche « Le résultat est » + le résultat du calcul
 
 
-var n1 = prompt(`Veuillez entre un premier nombre :`)
-var n2 = prompt(`Veuillez entre un deuxième nombre :`)
+var n1 = prompt(`Veuillez entrer un premier nombre :`)
+var n2 = prompt(`Veuillez entrer un deuxième nombre :`)
 
 // On doit faire une "conversion" car depuis le prompt on récupère automatiquement un string
 // Si l'utilisateur tape 1 et 2 comme nombre, 1 + 2 va faire une concaténation de string et on va obtenir 12
@@ -16,7 +16,7 @@ var nombre2 = parseFloat(n2);
 
 var somme = nombre1 + nombre2;
 
-alert(`Bienvenu sur la page de formulaire`)
+alert(`Bienvenue sur la page de formulaire`)
 
 console.log(` Nombre 1 : ${nombre1}, nombre 2 : ${nombre2}, somme des deux nombres : ${somme}`);
 alert(`Le résultat est ${somme}`);
