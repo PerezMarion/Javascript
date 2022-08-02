@@ -105,3 +105,11 @@ const noms = [
   });
 
   console.log(nom);    // Ne retourne que "Christian Lisangola" et pas "Christian Lasangala"
+
+// reduce
+
+somme = 0;
+somme = nombres.reduce(function (accumulateur, nombre) {
+  return accumulateur + nombre;
+}, 0);
+console.log("Somme reduce : ", somme)  
