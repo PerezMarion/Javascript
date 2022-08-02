@@ -3,8 +3,8 @@
 
 const tableauDepart = [5, 9, 11, 6, 1, 5, 24, 7, 2];
 
-const indexEgalValeur = tableauDepart.find(function(entier) {
-    return tableauDepart.indexOf(entier) === entier;
+const indexEgalValeur = tableauDepart.find(function(entier, index) {
+    return index === entier;
 })
 
 console.log(indexEgalValeur);

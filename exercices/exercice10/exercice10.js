@@ -3,19 +3,15 @@
 // Retournez le tableau résultant
 // La chaîne en argument sera toujours d'au moins K caractères
 
-const tableauCaractere = (phrase, entier) => {
-    let tableau = [];
-    let index = 0;
-    while(phrase.length >= entier) {
-        let caracteres = phrase.substr(index, entier);
-        index = index + entier;
-        tableau.push(caracteres);
+const couperPhrase = (phrase, entier) => {
+    const tableau = [];
+    for(let i = 0; i <= phrase.length - 1 ; i = i + entier) {
+        tableau.push(phrase.slice(i, i + entier))
     }
-    tableau.push(phrase.substr(index))
     return tableau;
 }
 
 const phrase = "Accidentellement nous nous blessâmes";
 const entier = 4;
 
-// console.log(tableauCaractere(phrase, entier));
+console.log(couperPhrase(phrase, entier));
