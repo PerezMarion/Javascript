@@ -1,3 +1,6 @@
+// Faire en sorte que lorsqu'on clique sur le bouton ajouter, cela ajouter un élément de la liste elementsToAdd à la liste existente dans
+// le html et que lorsque l'on clique sur le bouton vider, cela enleve toute la liste
+
 let elementsToAdd = [
     "Valentin HTLM",
     "Reactjs & Redux",

@@ -106,7 +106,9 @@ const nom = noms.find(function (nom) {
 
 console.log(nom);    // Ne retourne que "Christian Lisangola" et pas "Christian Lasangala"
 
-// reduce
+// La méthode reduce() applique une fonction qui est un « accumulateur » et qui traite chaque valeur d'une liste afin de la réduire 
+// à une seule valeur. La valeur précédemment retournée par le dernier appel, ou valeur initiale fournie si c'est le début, est stockée
+// dans l'accumulateur car c'est une valeur « accumulée » au fur et à mesure des appels
 
 somme = 0;
 somme = nombres.reduce(function (accumulateur, nombre) {
