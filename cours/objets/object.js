@@ -124,3 +124,53 @@ const article5 = new Article(
 );
 
 console.log(article5);
+
+// ---------------------------- Méthode recommandée pour créer une classe avec constructeur, geteurs, seteurs ---------------------------- //
+// Il n'existe pas vraiment de classe, de geteurs et de seteurs dans Javascript mais il est aujourd'hui recommandé de faire comme ça pour imiter
+// le langage Java et faciliter le codage en Javascript des codeurs habitués à Java.
+
+class Article {
+
+  constructor(designation, prixUHT, description, urlImage) {      // Si on ajoute des # devant les attributs, cela permet de les passer en privé
+    this.designation = designation;                               // this.#designation = designation
+    this.prixUHT = prixUHT;                                       // cela permet d'obliger le codeur à passer par les geteurs et les seteurs
+    this.description = description;                               // car les attributs ne sont plus disponibles via l'appel classique en 
+    this.urlImage = urlImage;                                     // Javascript
+  }
+
+  getDesignation() {
+    return this.designation;
+  }
+
+  setDesignation(designation) {
+    this.designation = designation;
+  }
+
+  getPrixHUT() {
+    return this.prixUHT;
+  }
+
+  setPrixUHT(prixUHT) {
+    this.prixUHT =prixUHT;
+  }
+
+  getDescription() {
+    return this.description;
+  }
+
+  setDescription(description) {
+    this.description = description;
+  }
+
+  getUrlImage() {
+    return this.urlImage;
+  }
+
+  setUrlImage(urlImage) {
+    this.urlImage = urlImage;
+  }
+
+  getPrixTTC() {
+    return this.prixUHT*1.2;
+  }
+}

@@ -62,6 +62,10 @@ var real = {
   getEquipe3: function () {     // this.equipe de la fonction efficherEquipe se trouve dans l'objet window donc elle récupère le contexte
     afficherEquipe();           // et retourne l'équipe générale même si la fonction getEquipe3 qui l'utilise se trouve dans l'objet real
   },
+
+  getEquipe4: function () {     // utilisation de la méthode .bind(this) qui permet de faire le lien entre la fonction afficherEquipe et le
+    afficherEquipe.bind(this);  // contexte dans lequel elle est utilisé (objet real) donc retourne l'équipe de l'objet real
+  },
 };
 
 // Ce type de fonction "rest parametre" permet de représenter un nombre indéfini d'arguments sous forme d'un tableau
