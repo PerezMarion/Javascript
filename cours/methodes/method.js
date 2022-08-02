@@ -90,21 +90,21 @@ console.log(nombresSup20Good);
 // Si la recherche satisfait plusieurs éléments du tableau dans lequel on l'effectue, c'est seulement la première occurence qui sera retournée
 
 const noms = [
-    "Jordan Prevot",
-    "Mickael Veril",
-    "Nouah Menadjlia",
-    "Christian Lisangola",
-    "Steven Dumortier",
-    "Valentin Payet",
-    "Mansour Achour",
-    "Christian Lasangala",
-  ];
+  "Jordan Prevot",
+  "Mickael Veril",
+  "Nouah Menadjlia",
+  "Christian Lisangola",
+  "Steven Dumortier",
+  "Valentin Payet",
+  "Mansour Achour",
+  "Christian Lasangala",
+];
   
-  const nom = noms.find(function (nom) {
-    return nom.startsWith("Chris");
-  });
+const nom = noms.find(function (nom) {
+  return nom.startsWith("Chris");
+});
 
-  console.log(nom);    // Ne retourne que "Christian Lisangola" et pas "Christian Lasangala"
+console.log(nom);    // Ne retourne que "Christian Lisangola" et pas "Christian Lasangala"
 
 // reduce
 
