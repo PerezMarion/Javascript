@@ -118,8 +118,49 @@ submitButton.addEventListener("click", function (event) {
         countryError.classList.remove("error");
     }
 
+    // Pour éviter de dupliquer tout ce code et permettre que tous les messages d'erreur s'affiche en même temps et pas les uns après les
+    // autres s'il y a plusieurs erreurs, on peut encapsuler le code :
+    // On créer deux fonctions qui sont normalement délocalisé sur un autre fichier.js et que l'on importe dans celui ci pour pouvoir les
+    // utiliser :
+    //      - une fonction booléenne qui permet de vérifier que tous les champs du formulaire sont bien renseigné (on retourne true 
+    //        si c'est bon, false si l'un d'entre eux, plusieurs ou tous sont manquants) 
+    //      - une fonction qui créer les messages d'erreur 
+    // Si le formulaire est valide on a true et on passe à la suite du code, en revanche s'il y a un ou plusieurs champs vide on a false et
+    // et pour chaque champs vide on affiche le message d'erreur
+
+    // const champsFormulaire = [firstName, lastName, email, phone, address, zipCode, city, country];
+      
+    // function isFormValid(champsFormulaire) {
+    //     for (let champs of champsFormulaire) {
+    //         if (!champs.value) {
+    //         return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+      
+    // function displayErrorMessages(champs) {
+    //     const nomChamps = field.getAttribute("data-name");
+    //     const messageErreur = document.querySelector(`#err_${champs.name}`);
+    //     if (!champs.value) {
+    //         messageErreur.innerText = `${nomChamps} cannot be empty`;
+    //         messageErreur.classList.add("error");
+    //         return;
+    //     }
+    //     messageErreur.innerText = "";
+    //     messageErreur.classList.remove("error");
+    // }
+
+    // if (!isFormValid(champsFormulaire)) {
+    //     for (let champs of champsFormulaire) {
+    //       displayErrorMessages(champs);
+    //     }
+    //     return;
+    // }
+
+
     // Afficher un message pendant 5 secondes lorsque la création est effectuée 
-    
+
     messageCreation.innerText = "Création effectuée avec succès";
     messageCreation.classList.add("succes");
     setTimeout(function() {
