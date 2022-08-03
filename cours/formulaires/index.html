@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Static Template</title>
+    </head>
+    <body>
+
+        <h2>Créer votre compte</h2>
+
+        <p>Voir la <a href="">page</a></p>
+        </br>
+
+        <form>
+
+            <div>
+                <label for="last_name">Votre nom : </label>
+                <input type="text" id="last_name" name="last_name" />
+                <p id="err_last_name"></p>
+            </div>
+
+            <div>
+                <label for="first_name">Votre prenom : </label>
+                <input type="text" id="first_name" name="first_name" />
+                <p id="err_first_name"></p>
+            </div>
+
+            <div>
+                <label for="email">Votre email : </label>
+                <input type="email" id="email" name="email" />
+                <p id="err_email"></p>
+            </div>
+
+            <div>
+                <label for="phone">Votre telephone : </label>
+                <input type="tel" id="phone" name="phone" />
+                <p id="err_phone"></p>
+            </div>
+
+            <div>
+                <label for="address">Votre adresse : </label>
+                <input type="text" id="address" name="address" />
+                <p id="err_address"></p>
+            </div>
+
+            <div>
+                <label for="zip_code">Votre code postal : </label>
+                <input type="number" id="zip_code" name="zip_code" />
+                <p id="err_zip_code"></p>
+            </div>
+
+            <div>
+                <label for="city">Votre ville : </label>
+                <input type="text" id="city" name="city" />
+                <p id="err_city"></p>
+            </div>
+
+            <div>
+                <label for="country">Choisissez un pays:</label>
+                <select id="country" name="country">
+                    <option value="">----- Choisir -----</option>
+                    <option value="France">France</option>
+                    <option value="Irlande">Irlande</option>
+                    <option value="Angleterre">Angleterre</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Allemagne">Allemagne</option>
+                    <option value="Suisse">Suisse</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Belgique">Belgique</option>
+                    <option value="Pays de Galles">Pays de Galles</option>
+                    <option value="Ecosse">Ecosse</option>
+                </select>
+                <p id="err_country"></p>
+            </div>
+
+            </br>
+            <input id="submit_button" type="submit" value="Ajouter"/>
+            <input id="reset" type="reset" value="Réinitialiser"/>
+            </br>
+            <p id="creation_succes"></p>
+
+        </form>
+
+        </br></br>
+        <h2>Liste des utilisateurs</h2>
+
+        <table>
+            <thead>
+                <tr>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Email</th>
+                <th>Telephone</th>
+                <th>Adresse</th>
+                <th>Code postal</th>
+                <th>Ville</th>
+                <th>Pays</th>
+                <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="users_list">
+
+            </tbody>
+        </table>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+            integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./form.js" type="module"></script>
+
+    </body>
+</html>

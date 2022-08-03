@@ -1,0 +1,46 @@
+body {
+    font-family: "trebuchet ms",sans-serif;
+    font-size: 90%;
+    margin-left: 30px;
+}
+
+form {
+    width: 280px;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input, select {
+    padding: 3px;
+    border: 1px solid #807777;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 1px 1px 2px #c2bfbf inset;
+}
+
+input[type=submit], input[type=reset] {
+    box-shadow: 1px 1px 1px #c2bfbf;
+    cursor: pointer;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    font-size: 13px;
+}
+
+.error {
+    color: red;
+}
+
+.succes {
+    color : green;
+}
