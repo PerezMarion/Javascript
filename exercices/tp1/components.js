@@ -3,6 +3,7 @@ import { partyParrots } from "./partyparrot.js";
 const listElement = document.querySelector("#list");
 
 // Création de la carte : avec titre, image menant vers le lien de la page wikipédia correspondante
+// Ajout de cette nouvelle carte créée à la liste d'éléments à afficher dans la page
 
 export const createCard = (data) => {
   

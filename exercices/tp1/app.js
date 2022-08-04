@@ -17,6 +17,7 @@ searchButton.addEventListener("click", function () {
     let url =`https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=20&format=json&origin=*&srsearch=${searchQuery.value}`;
 
     // On récupère les informations de l'API à l'adresse donnée et pour chaque données on crée une carte avec la fonction "createCard"
+    // qui est une fonction importée du fichier components.js
     // Puis on efface l'input (écriture dans le champs de recherche)
     
     axios.get(url).then((response) => {
