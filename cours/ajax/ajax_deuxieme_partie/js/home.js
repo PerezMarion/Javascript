@@ -1,6 +1,7 @@
-// Importation de la fonction UserCard depuis le fichier user-card.js
+// Importation de la fonction UserCard depuis le fichier user-card.js et de la constante BASE_URL depuis le fichier constants.js
 
 import { UserCard } from "./components/user-card.js";
+import { BASE_URL } from "./constants.js";
 
 const usersCards = document.querySelector("#users");
 
