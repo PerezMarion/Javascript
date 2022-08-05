@@ -1,5 +1,5 @@
 import { UserDetails } from "./components/user-details.js";
-import { BASE_URL } from "./constants.js";
+import { Api } from "./services/api-config.js";
 
 const urlParams = new URLSearchParams(location.search);
 
@@ -7,7 +7,7 @@ const id = urlParams.get("id");
 
 const userDetails = document.querySelector("#user-details");
 
-axios.get(`${BASE_URL}/${id}`).then(function (response) {
+Api.get("/users/" + id).then(function (response) {
     const user = response.data;
     userDetails.innerHTML = UserDetails(user);
 });

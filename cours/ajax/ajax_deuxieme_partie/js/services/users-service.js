@@ -13,7 +13,7 @@ export class UsersService {
     }
 
     fetchUserById(id) {
-        Api.get(this.url + "/" + id).then(function (response) {
+        return Api.get(this.url + "/" + id).then(function (response) {
             return response.data;
         });
     }
